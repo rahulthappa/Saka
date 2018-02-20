@@ -1,6 +1,6 @@
 {
   "name": "loginScreen",
-  "app_id": "",
+  "app_id": "a5df02fc",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
