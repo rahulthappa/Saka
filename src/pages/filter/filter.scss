@@ -1,0 +1,87 @@
+page-filter {
+    ion-item.item ion-radio.radio {
+        margin:0 8px 0 4px !important;
+        
+    }
+    .card {
+        ion-card-content {
+            padding:0 10px;    
+            h4 {
+                font-weight:600;
+                font-size:16px;
+                color:#212121;
+                margin-bottom:8px;
+            }
+        }
+    }
+    
+    .item-inner .range-has-pin {
+        padding-top:0;
+    }
+    .range-pin {
+        display: none !important;
+    }
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+        border-bottom:0;
+    }
+    ion-range ion-label.label {
+        color:#212121!important;
+        font-weight:600;
+    }
+    .radio-list {
+        margin-bottom:20px;
+        ion-label.label {
+            margin:0;
+        }
+        .col, ion-item.item, button.item-cover, div.item-inner{
+            line-height:30px;
+            min-height:30px;
+            height:30px;
+        }
+    }
+    
+    ion-list.checkbox-list {
+        margin-bottom: 15px;
+        ion-item.item {
+            display: inline-block;
+            width: auto;
+            font-size:1.5rem;
+            margin-right:8px;
+            line-height: 30px;
+            min-height: 30px;
+            .item-inner {
+                line-height: 30px;
+                min-height: 30px;
+                text-transform:uppercase;
+            }
+        }
+        button.item-cover {
+            border:1px solid #ddd;
+            border-radius:40px;
+            height:30px;
+            overflow: hidden;
+            margin-right:10px;
+        }
+        .checkbox-icon {
+            display: none;
+        }
+        .checkbox-icon.checkbox-checked + button.item-cover {
+            border-color:red;
+        }
+        .item.item-md .checkbox-md, .item.item-ios .checkbox-ios, .item.item-wp .checkbox-wp {
+            margin:0;
+        }
+        .item-block .item-inner {
+            padding-right:0;
+        }
+        .checkbox + .item-inner ion-label {
+            margin: 0;
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+    } 
+}
+div ion-item.item-checkbox-checked .checkbox + .item-inner div ion-label {
+    color:red ;    
+}

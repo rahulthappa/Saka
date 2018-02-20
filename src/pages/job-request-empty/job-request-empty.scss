@@ -1,0 +1,12 @@
+page-job-request-empty {
+    .card-header {
+        h4 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    ion-card-content {
+        padding:15px 10px;
+    }
+}

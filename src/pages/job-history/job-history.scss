@@ -1,0 +1,32 @@
+page-job-history {
+    .card ion-card-header {
+        padding-bottom:0;
+        ion-col {
+            padding-bottom:0;
+        }
+    }
+    .card ion-card-content {
+        label, ion-icon[name="md-pin"], ion-icon[name="md-calendar"] {
+            font-size:13px;
+            vertical-align: middle;
+        }
+        
+        p {
+            border-bottom: 1px solid #b7bac9;
+            border-top: 0;
+            padding-bottom: 10px;
+            color: #5c5c5c;
+            padding-top: 0;
+        }
+    }
+    .timeLocation ion-col {
+        padding-top:0;
+    }
+    .job-price {
+        color:#ff4e47;
+        font-weight:600;
+    }
+    
+    
+    
+}

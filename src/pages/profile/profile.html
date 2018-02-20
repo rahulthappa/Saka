@@ -1,0 +1,45 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-buttons star left>
+            <button  ion-button icon-only [menuToggle]="activeMenu">
+                <ion-icon name="{{back}}"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title text-center>{{navbarTitle}}</ion-title>
+        <ion-buttons end>
+            <button  ion-button icon-end icon-only (click)="presentPopover($event)">
+                <ion-icon name="{{more}}"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item text-center>
+            <button>
+                <ion-img item-avatar src="../../assets/imgs/logo.png"></ion-img>
+            </button>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Full Name</ion-label>
+            <ion-input type="text" value="Micheal Smith"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" value="michealsmith@gmail.com"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Phone Number</ion-label>
+            <ion-input type="text" value="+44 345 675 7890"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Address</ion-label>
+            <ion-input type="text" value="469 Christie Way, Cambridge, LA"></ion-input>
+        </ion-item>
+    </ion-list>
+</ion-content>

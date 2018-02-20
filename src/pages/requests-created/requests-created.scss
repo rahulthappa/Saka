@@ -1,0 +1,39 @@
+page-requests-created {
+    font-family: 'Raleway', sans-serif;
+    ion-content.content, ion-content.content.content-ios {
+		background: #ffc200; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffc200 0%, #ff4e47 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffc200 0%,#ff4e47 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffc200 0%,#ff4e47 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc200', endColorstr='#ff4e47',GradientType=0 ); /* IE6-9 */	
+        ion-list {
+            display:table;  
+            height: calc(100% - 20px);
+            width: 100%;
+            background-color:transparent;
+            ion-item {
+                display:table-cell;
+                vertical-align:middle;
+                text-align: center;
+                background-color:transparent;
+                border-bottom:0;
+                color:#fff;
+                h4, ion-icon {
+                    color:#fff;
+                }
+                ion-icon {
+                    font-size:45px;
+                    margin-bottom:10px;
+                }
+                h4 {
+                    font-weight:600;
+                    font-size:28px;
+                    font-family: 'Raleway', sans-serif;
+                }
+            }
+        }
+        .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+            border-bottom:0;
+        }
+	}	
+}

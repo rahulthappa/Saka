@@ -1,0 +1,61 @@
+page-job-detail-quote {
+    .card ion-card-content {
+        padding:10px;
+        p {
+            color:#212121;
+            padding-top:15px;
+            font-size:14px;
+            line-height:1.4;
+            border-top:1px solid #b7bac9;
+        }
+       h4 {
+			margin-bottom:0;
+			vertical-align:top;
+		}
+		p {
+			padding-top:0;
+			border-top:0;
+			margin-top:0;
+			font-size:16px;
+			margin-bottom:0;
+		}
+		p.font-14 {
+			font-weight:normal;
+			font-size:14px;
+        }
+        .badge-abs {
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            height: 33px;
+            min-width: 150px;
+            min-width: auto;
+            text-align: center;
+            background-color: #edeff8;
+            width: auto;
+            max-width: 100%;
+            border-radius: 15px 0 0 15px;
+            padding-left: 15px;
+            padding: 7px 6px 7px 15px;
+            font-size: 13px;
+            top: 5px;
+            p {
+                position: static;
+                text-align: center;
+                color: #ff4e47;
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+    .job-detail a.accept-button {
+        background-color: #ff4e47;
+        border-radius: 25px;
+        color: #fff;
+    }
+    .job-detail a {
+        padding: 12px 25px;
+        font-size: 14px;
+        margin-right: 0;
+    }
+}

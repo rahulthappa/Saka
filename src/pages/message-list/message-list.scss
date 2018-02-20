@@ -1,0 +1,42 @@
+page-message-list {
+    .list-wp > .item-block:last-child, .list-wp > .item-wrapper:last-child .item-block {
+        border-bottom:0.55px solid #c8c7cc;
+    }
+    ion-list.list, .list-wp, .list-ios, .list-md {
+        ion-item.item {
+            border-bottom:0.55px solid #c8c7cc;
+            div.item-inner {
+                padding-right:0;
+                border-bottom:0;
+                ion-label {
+                    margin:5px;
+                    ion-grid {
+                        padding:5px 15px;
+                    }
+                    h4 {
+                        font-size:15px;
+                        font-weight:600;
+                        line-height:1.6;
+                    }
+                    p {
+                        font-size:13px;
+                    }
+                }
+            }
+            .right-sec {
+                p {
+                    font-size:13px;
+                    margin-top:5px;
+                }
+                ion-badge {
+                    font-size: 11px;
+                    height: 18px;
+                    width: 18px;
+                    padding: 3px 2px;
+                    border-radius:50%;
+                    margin-right:6px;
+                }
+            }
+        }
+    }
+}

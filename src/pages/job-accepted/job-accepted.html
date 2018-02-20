@@ -1,0 +1,118 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <ion-buttons star left>
+            <a href="#/jobreq" ion-button icon-only>
+                <ion-icon name="{{back}}"></ion-icon>
+            </a>
+        </ion-buttons>
+        <ion-title text-center>{{navbarTitle}}</ion-title>
+        <ion-buttons end>
+            <button  ion-button icon-end></button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-card class="card-md card-accepted" style="box-shadow:none;border:0;margin-bottom:0;">
+        <ion-card-header>
+            <ion-row>
+                <ion-col col-12><h4>House Electric Fitting (4 Rooms)</h4></ion-col>
+                <ion-col col-12><ion-badge class="badge-orange">Electric</ion-badge></ion-col>
+            </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-row>
+                <ion-col col-12>
+                    <ion-icon name="md-pin"></ion-icon>
+                    <label>2631 Roosevelt Wilson Lane</label>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-7>
+                    <ion-icon name="md-calendar"></ion-icon>
+                    <label>22 December</label>
+                </ion-col>
+                <ion-col col-5>
+                    <ion-icon name="md-time"></ion-icon>
+                    <label>10:00 AM</label>
+                </ion-col>
+            </ion-row>
+            <ion-row class="row-border">
+                <ion-col col-7>
+                    <ion-icon name="md-cash"></ion-icon>
+                    <label>Estimate Budget <br> <label for="">$4560.00</label></label>
+                </ion-col>
+                <ion-col col-5>
+                    <ion-icon name="md-cash"></ion-icon>
+                    <label>Bid Amount <br> <label for="">$4200.00</label></label>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <ion-list class="accepted-list">
+        <ion-item>
+            <ion-row>
+                <ion-col col-12>
+                    <p class="textcard">
+                        Electrical Fitter mechanics (EFMs) are responsible for developing and maintaing electricity.
+                    </p>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+        <ion-item>
+            <ion-row>
+                <ion-col col-12>
+                    <p class="textcard">
+                        You have accepted the quote
+                    </p>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+        <ion-item>
+            <ion-row>
+                <ion-col col-12>
+                    <p class="textcard">
+                        There are many variations of passages of lorem ipsum dolor sit amit, consectetur adipiscing elit
+                    </p>
+                    <label for="" class="red-label">$4200</label>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+        <ion-item class="item-time">
+            <p><ion-icon name="md-time"></ion-icon> 1 Hour</p>
+        </ion-item>
+    </ion-list>
+    <ion-card>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row class="call-section">
+                    <ion-col col-3>
+                        <ion-img item-avatar src="../../assets/imgs/logo.png"></ion-img>
+                    </ion-col>
+                    <ion-col col-9>
+                        <h4>Deborah L. Thomas</h4>
+                        <p>DeborahL@teleworms.us</p>
+                        <ion-row>
+                            <ion-col col-6>
+                                <button><ion-icon name="md-call"></ion-icon> Call Now</button>
+                            </ion-col> 
+                            <ion-col col-6>
+                                <button style="background-color:#27ae60;"><ion-icon name="md-mail"></ion-icon> Message</button>
+                            </ion-col> 
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>  
+    </ion-card>
+    <ion-card style="box-shadow:none; border:0;">
+        <ion-card-content text-center>
+            <button class="button-custom" (click)="myReview()"><ion-icon name="md-checkmark"></ion-icon>Mark Complete</button>
+        </ion-card-content>
+    </ion-card>
+    
+</ion-content>

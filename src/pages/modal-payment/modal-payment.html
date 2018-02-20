@@ -1,0 +1,85 @@
+<ion-content padding>
+
+    <!-- Payment Modal -->
+    <div  class="modal-inner payment-inner">
+        <ion-list>
+            <ion-item style="border-bottom:0;">
+                <h5>Payment</h5>
+                <p>Save Card</p>
+            </ion-item>
+        </ion-list>
+        <ion-list radio-group class="radio-list">
+            <ion-row>
+                <ion-col col-1>
+                    <ion-item>
+                        <ion-radio item-left value="budget" ></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <p>1244</p>
+                </ion-col>
+                <ion-col>
+                    <p>8888<p>
+                </ion-col>
+                <ion-col>
+                    <p>8888</p>
+                </ion-col>
+                <ion-col>
+                    <p>5466</p>    
+                </ion-col>
+                <ion-col>
+                    <ion-input placeholder="CVV" type="password"></ion-input>
+                </ion-col>
+                <ion-col>
+                    <p>Visa</p>    
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-1>
+                    <ion-item>
+                        <ion-radio item-left value="card"></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                        <p>1244</p>
+                    </ion-col>
+                    <ion-col>
+                        <p>8888<p>
+                    </ion-col>
+                    <ion-col>
+                        <p>8888</p>
+                    </ion-col>
+                    <ion-col>
+                        <p>5466</p>    
+                    </ion-col>
+                    <ion-col>
+                        <ion-input placeholder="CVV" type="password"></ion-input>
+                    </ion-col>
+                    <ion-col>
+                        <p>Visa</p>    
+                    </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-2>
+                    <ion-item>
+                        <ion-radio item-left value="rust"></ion-radio>
+                    </ion-item>
+                </ion-col>
+                <ion-col col-10>
+                    <p>
+                        Cash At Site/Bank Transfer
+                    </p>        
+                </ion-col>
+                <ion-col col-12>
+                    <p class="amount-p">Amount: <span color="primary">$4200.00</span></p>
+                </ion-col> 
+            </ion-row>
+        </ion-list>
+        <div class="job-detail" text-right style="margin-top:15px;">
+            <button (click)="dismiss()">Cancel</button>
+            <a href="#/markcomplete" class="accept-button" (click)="dismiss()" full>Pay Now</a>
+        </div>
+    </div> 
+
+</ion-content>
+  

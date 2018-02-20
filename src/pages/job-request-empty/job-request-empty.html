@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons star left>
+          <button  ion-button icon-only [menuToggle]="activeMenu">
+              <ion-icon name="{{back}}"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-title text-center>{{navbarTitle}}</ion-title>
+      <ion-buttons end>
+          <button  ion-button icon-end>
+            <ion-icon name="{{filter}}"></ion-icon>
+          </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="card-md">
+        <ion-card-content>
+            <ion-row>
+                <ion-col col-3>
+                    <img src="assets/imgs/plumber.png" />	
+                </ion-col>
+                <ion-col col-9>
+                    <h4>Plumbing</h4>
+                    <p>
+                        Professtional and qualified plumbers at your doorstep now just a booking away
+                    </p>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+  
+  
+  
+    <ion-fab right bottom>
+        <button ion-fab>
+            <ion-icon name="md-add"></ion-icon>
+        </button>
+    </ion-fab>
+</ion-content>

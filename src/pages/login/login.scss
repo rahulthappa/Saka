@@ -1,0 +1,94 @@
+page-login {
+	font-family: 'Raleway', sans-serif;
+	ion-content.content, ion-content.content.content-ios {
+		background: #ffc200; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffc200 0%, #ff4e47 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffc200 0%,#ff4e47 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffc200 0%,#ff4e47 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc200', endColorstr='#ff4e47',GradientType=0 ); /* IE6-9 */	
+	}	
+	ion-content.content {
+		background-color:transparent;
+	}
+	ion-item.item {
+		background-color:transparent;
+	}
+	.list-ios > .item-block:first-child {
+		border-top:none;
+	}
+	
+	p a, p span {
+		color:#fff;
+		font-size:16px;
+	}
+	.content {
+		ion-list {
+			width: calc(100% - 70px);
+			margin:0 auto 15px;
+		}
+	}
+	.scroll-content {}
+	.button-md-light, .button-ios-light {
+		margin-bottom:10px;
+	}
+	.list-md .item-input:last-child {
+	}
+	div ion-list.list ion-item.item-block:first-child .item-inner {
+		border-color:transparent;
+	}
+	
+	div.scroll-content {
+		position: unset;
+		overflow-x: unset;
+		overflow-y: unset;
+		-webkit-overflow-scrolling: unset;
+		will-change: unset;
+		contain: unset;
+	}
+	div ion-list.list {
+		ion-item.item-block:last-child {
+			// border-color:transparent;
+		}
+		ion-item.item-block .item-inner {
+			border-bottom:.55px solid #ffd5a4;
+			color:#ffd5a4;
+			ion-label,  .input {
+				color:#ffd5a4;
+			}
+		}
+	}
+	
+	.item-md.item-input.item-input-has-focus .item-inner, 
+	.item-md.item-input.input-has-focus .item-inner,
+	ion-item.item-input.item-input-has-focus .item-inner,
+	ion-item.item-input.input-has-focus .item-inner {
+	  border-bottom-color: #fff !important;
+	  -webkit-box-shadow: inset 0 -1px 0 0 #fff;
+	  box-shadow: inset 0 -1px 0 0 #fff;
+	}
+	.item-input.item-input-has-focus .item-inner ion-label, 
+	.item-input.item-input-has-focus .item-inner .input,
+	.ion-ios.input-has-focus .item-inner .input-wrapper ion-label,
+	.ion-ios.input-has-focus .item-inner .input-wrapper .input {
+		color:#fff !important;
+	}
+	.list-md .item-input.item-input-has-focus:last-child,
+	.list-md .item-input.input-has-focus:last-child {
+	  border-bottom-color: transparent;
+	  border-width:.55px;
+	  -webkit-box-shadow: inset 0 -1px 0 0 #fff;
+	  box-shadow: inset 0 -1px 0 0 #fff;
+	}
+	.button-inner {
+		color:#ff4e47;
+		font-weight:600;
+	} 
+	a[href] { 
+		text-decoration:underline;
+	}
+}
+
+
+
+
+

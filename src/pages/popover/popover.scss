@@ -1,0 +1,23 @@
+page-popover {
+    a[href] {
+        color:#000;
+        :hover {
+            color:#000;
+            opacity: .8;
+        }
+    }
+
+    ion-list.list {
+        margin-bottom:0;
+        ion-inner {
+            padding-right:0;
+        }
+        .label {
+            font-size:13px;
+            margin:8px 10px;
+            ion-icon {
+                margin-right:8px;
+            }
+        }
+    }
+}

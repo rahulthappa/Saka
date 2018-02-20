@@ -1,0 +1,32 @@
+page-address-list {
+    .card ion-card-content {
+        padding:10px;
+        p {
+            border-top:0;
+            padding-top:0;
+        }
+        ion-icon, p {
+            color:#414141;
+        }
+    }
+    div .list-ios {
+        margin-bottom:15px;
+    }
+    .list div.button-custom-div {
+        padding-left:0;
+        padding-right:0;
+        padding-top:15px;
+        padding-bottom:0;
+        .button {
+            max-width:100%;
+            text-transform: capitalize;
+        }
+        ion-icon {
+            font-size:21px;
+            margin-right:10px;
+        }
+        .ion-md-checkmark {
+            font-size: 20px;
+        }
+    }
+}

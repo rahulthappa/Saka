@@ -1,0 +1,124 @@
+page-filter-corp {
+    ion-item.item ion-radio.radio {
+        margin:0 8px 0 4px !important;
+        
+    }
+    .card {
+        ion-card-content {
+            padding:0 10px;    
+            h4 {
+                font-weight:600;
+                font-size:16px;
+                color:#212121;
+                margin-bottom:8px;
+            }
+        }
+    }
+    
+    .item-inner .range-has-pin {
+        padding-top:0;
+    }
+    .range-pin {
+        display: none !important;
+    }
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+        border-bottom:0;
+    }
+    .range [range-left], .range [range-right] {
+        margin: 0 20px 0 0;
+        position: absolute;
+        bottom: 0;
+    }
+    .range [range-left] {
+        left: 0;
+    }
+    .range [range-right] {
+        right: 0;
+    }
+    ion-range.range-ios, ion-range.range-md, ion-range.range-wp {
+        padding:0 16px 20px;
+        ion-label.label {
+            color:#212121!important;
+            font-weight:600;
+        }
+    } 
+    .radio-list {
+        margin-bottom:20px;
+        ion-label.label {
+            margin:0;
+        }
+        .col, ion-item.item, button.item-cover, div.item-inner{
+            line-height:32px;
+            min-height:32px;
+            height:32px;
+        }
+    }
+    .card-content ion-item.item-width.item, .card-content ion-item.item-width.item:last-child {
+        width: 100%;
+        display: inline-block;
+        border-bottom:0;
+        ion-input.input {
+            width: 100%;
+            display: inline-block;
+            border-bottom:1px solid #dedede;
+        }
+        
+    }
+    ion-list.checkbox-list {
+        margin-bottom: 15px;
+        
+        ion-item.item {
+            display: inline-block;
+            width: auto;
+            font-size:1.5rem;
+            margin-right:8px;
+            line-height: 32px;
+            min-height: 32px;
+            .item-inner {
+                line-height: 32px;
+                min-height: 32px;
+                text-transform:uppercase;
+                ion-icon {
+                    font-size: 16px;
+                    color: #1d1818;
+                    margin-left: 11px;
+                    margin-top: 9px;
+                }
+                ion-label {
+                    padding:0 13px;
+                    font-size:13px;
+                    font-weight:600;
+                }
+            }
+            
+        }
+        button.item-cover {
+            border:1px solid #ddd;
+            border-radius:40px;
+            height:32px;
+            overflow: hidden;
+            margin-right:10px;
+        }
+        .checkbox-icon {
+            display: none;
+        }
+        .checkbox-icon.checkbox-checked + button.item-cover {
+            border-color:red;
+        }
+        .item.item-md .checkbox-md, .item.item-ios .checkbox-ios, .item.item-wp .checkbox-wp {
+            margin:0;
+        }
+        .item-block .item-inner {
+            padding-right:0;
+        }
+        .checkbox + .item-inner ion-label {
+            margin: 0;
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+    } 
+}
+div ion-item.item-checkbox-checked .checkbox + .item-inner div ion-label {
+    color:red ;    
+}

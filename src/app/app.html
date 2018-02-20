@@ -1,0 +1,130 @@
+
+<ion-menu [content]="content" id="menu1">
+    <ion-content padding style="position:relative;padding-bottom:80px">
+        <ion-grid style="position:absolute;left:16px;bottom:0;">
+            <ion-row>
+                <ion-col col-12>
+                    <ion-list >
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-12>
+                                        <a href="#/login" >
+                                        <ion-icon item-start name="md-refresh"></ion-icon>
+                                        <label>Logout</label>
+                                        </a>
+                                    </ion-col>
+                                    
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-grid>
+            <ion-row>
+                <!-- <ion-col col-3><ion-img item-avatar src="assets/imgs/logo.png" alt=""></ion-img></ion-col> -->
+                <ion-col col-3><img item-avatar src="../assets/imgs/logo.png" alt=""></ion-col>
+                <ion-col col-9><h5>Molly Bootman</h5></ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    
+                    <ion-list>
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-12>
+                                        <a href="#/jobhistory">
+                                            <ion-icon item-start name="md-refresh"></ion-icon>
+                                            <label>Job History</label>
+                                        </a>
+                                    </ion-col>
+                                    
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list>
+                    <ion-list>
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-9>
+                                        <a href="javascript:void(0)">
+                                            <ion-icon item-start name="md-mail"></ion-icon>
+                                            <label>Messages</label>
+                                        </a>
+                                    </ion-col>
+                                    <ion-col col-3>
+                                        <ion-badge class="badge-blue" item-end>2</ion-badge>    
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list>  
+                    <ion-list>
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-9>
+                                        <a href="#/notification">
+                                            <ion-icon item-start name="md-notifications"></ion-icon>
+                                            <label>Notification</label>
+                                        </a>
+                                    </ion-col>
+                                    <ion-col col-3>
+                                        <ion-badge class="badge-blue" item-end>5</ion-badge>    
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list> 
+                    <ion-list>
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-12>
+                                        <a href="#/profile">
+                                            <ion-icon item-start name="md-person"></ion-icon>
+                                            <label>My Profile</label>
+                                        </a>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list>
+                    <ion-list>
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-12>
+                                        <a href="javascript:void(0)">
+                                            <ion-icon item-start name="md-checkmark-circle-outline"></ion-icon>
+                                            <label>Payment History</label>
+                                        </a>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list> 
+                    <ion-list>
+                        <button class="item item-block">
+                            <ion-grid>
+                                <ion-row>
+                                    <ion-col col-12>
+                                        <a href="#/addcard">
+                                            <ion-icon item-start name="md-cash"></ion-icon>
+                                            <label>Add Card</label>
+                                        </a>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </button>
+                    </ion-list> 
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-content>
+</ion-menu>
+<ion-nav #content [root]="rootPage"></ion-nav>

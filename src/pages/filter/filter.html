@@ -1,0 +1,99 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-buttons star left>
+            <a href="#/jobreq"  ion-button icon-only >
+                <ion-icon name="{{back}}"></ion-icon>
+            </a>
+        </ion-buttons>
+        <ion-title text-center>{{navbarTitle}}</ion-title>
+        <ion-buttons end>
+                <a href="#/jobreq"  ion-button icon-end>{{saveButton}}</a>
+        </ion-buttons>
+    </ion-navbar>
+  
+  </ion-header>
+
+<ion-content>
+    <ion-card class="card-md" padding>
+        <ion-card-content>
+            <ion-row>
+                <ion-col col-12><h4>Category</h4></ion-col>
+            </ion-row>
+            <ion-list class="checkbox-list">
+                <ion-item>
+                    <ion-checkbox [(ngModel)]="data.electric"></ion-checkbox>
+                    <ion-label>Electric</ion-label>
+                </ion-item>
+            
+                <ion-item>
+                    <ion-checkbox [(ngModel)]="data.plumber" color="vibrant"></ion-checkbox>
+                    <ion-label>Plumber</ion-label>
+                </ion-item>
+            
+                <ion-item>
+                    <ion-checkbox [(ngModel)]="data.carpenter"></ion-checkbox>
+                    <ion-label>Carpenter</ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+        
+
+        
+        <ion-card-content>
+            <ion-row>
+                <ion-col col-12><h4>Job Type</h4></ion-col>
+            </ion-row>
+            <ion-list class="checkbox-list">
+                <ion-item>
+                    <ion-checkbox [(ngModel)]="data.newJob"></ion-checkbox>
+                    <ion-label>New Job</ion-label>
+                </ion-item>
+            
+                <ion-item>
+                    <ion-checkbox [(ngModel)]="data.job" color="vibrant"></ion-checkbox>
+                    <ion-label>Job In Progress</ion-label>
+                </ion-item>
+            
+            </ion-list>
+        </ion-card-content>
+
+        
+        <ion-card-content>
+            <ion-row>
+                <ion-col col-12><h4>Budget Not Known</h4></ion-col>
+            </ion-row>
+            <ion-list radio-group class="radio-list">
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>Yes</ion-label>
+                            <ion-radio item-left value="budget" ></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>No</ion-label>
+                            <ion-radio item-left value="rust"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+            </ion-list>
+        </ion-card-content>
+        
+        <ion-card-content>
+            <ion-row>
+                    <ion-col col-12><h4>Price<ion-badge float-right item-end color="primary">$ {{price}}</ion-badge></h4></ion-col>
+                </ion-row>
+            <ion-list>
+                <ion-item>
+                    <ion-range min="200" max="1000" pin="true" [(ngModel)]="price" color="primary">
+                        <ion-label range-left>$200</ion-label>
+                        <ion-label range-right>$1000</ion-label>
+                    </ion-range>
+                </ion-item>
+                <ion-item></ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

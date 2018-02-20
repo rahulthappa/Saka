@@ -1,0 +1,161 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons star left>
+            <button  ion-button icon-only [menuToggle]="activeMenu">
+                <ion-icon name="{{back}}"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title text-center>{{navbarTitle}}</ion-title>
+        <ion-buttons end>
+            <a href="#/filtercorp" ion-button icon-end>
+              <ion-icon name="{{filter}}"></ion-icon>
+            </a>
+        </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card class="card-md">
+      <ion-card-header>
+        <ion-row>
+          <ion-col col-9><h4>House Electric Fitting (4 Rooms)</h4></ion-col>
+          <ion-col col-3><ion-badge class="badge-orange">Electric</ion-badge></ion-col>
+        </ion-row>
+      </ion-card-header>
+      <ion-card-content>
+            <ion-row>
+                <ion-col col-12>
+                    <i class="material-icons">business</i>
+                    <label>Dibra R. Muniz, Building No.1</label>
+                </ion-col>
+            </ion-row>
+        <ion-row>
+            <ion-col col-12>
+                <ion-icon name="md-pin"></ion-icon>
+                <label>2631 Roosevelt Wilson Lane</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-7>
+                <ion-icon name="md-calendar"></ion-icon>
+                <label>22 December</label>
+            </ion-col>
+            <ion-col col-5>
+                <ion-icon name="md-time"></ion-icon>
+                <label>10:00 AM</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-7>
+                <ion-icon name="md-cash"></ion-icon>
+                <label>Estimate Budget <br> <label for="">$4560.00</label></label>
+            </ion-col>
+            <ion-col col-5>
+                <ion-icon name="md-cash"></ion-icon>
+                <label>Bid Amount <br> <label for="">$4200.00</label></label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-12>
+              <p class="textcard">
+                Electrical Fitter mechanics (EFMs) are responsible for developing and maintaing electricity...
+              </p>
+            </ion-col>
+          </ion-row>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="card-md">
+        <ion-card-header>
+          <ion-row>
+            <ion-col col-9><h4>Bathroom Fitting</h4></ion-col>
+            <ion-col col-3><ion-badge class="badge-blue">Plumber</ion-badge></ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-row>
+              <ion-col col-12>
+                  <ion-icon name="md-pin"></ion-icon>
+                  <label>2631 Roosevelt Wilson Lane</label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-7>
+                  <ion-icon name="md-calendar"></ion-icon>
+                  <label>24 December</label>
+              </ion-col>
+              <ion-col col-5>
+                  <ion-icon name="md-time"></ion-icon>
+                  <label>11:00 AM</label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-7>
+                  <ion-icon name="md-cash"></ion-icon>
+                  <label>Estimate Budget <br> <label for="">Not Known</label></label>
+              </ion-col>
+              <ion-col col-5>
+                  <ion-icon name="md-cash"></ion-icon>
+                  <label>Call Out Free <br> <label for="">$200.00</label></label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-12>
+                <p class="textcard">
+                  These can include joinery, plumbing and electrical installation, or related experience like cabinet
+                </p>
+              </ion-col>
+            </ion-row>
+        </ion-card-content>
+      </ion-card>
+  
+      <ion-card class="card-md">
+          <ion-card-header>
+            <ion-row>
+              <ion-col col-9><h4>Wooden Work</h4></ion-col>
+              <ion-col col-3><ion-badge class="badge-green">Carpenter</ion-badge></ion-col>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+                <ion-col col-12>
+                    <ion-icon name="md-pin"></ion-icon>
+                    <label>2631 Roosevelt Wilson Lane</label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-7>
+                    <ion-icon name="md-calendar"></ion-icon>
+                    <label>26 December</label>
+                </ion-col>
+                <ion-col col-5>
+                    <ion-icon name="md-time"></ion-icon>
+                    <label>11:30 AM</label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-7>
+                    <ion-icon name="md-cash"></ion-icon>
+                    <label>Estimate Budget <br> <label for="">Not Known</label></label>
+                </ion-col>
+                <ion-col col-5>
+                    <ion-icon name="md-cash"></ion-icon>
+                    <label>Bid Amount <br> <label for="">OPEN</label></label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-12>
+                  <p class="textcard">
+                    Woodworkers manufacture a variety of products
+                  </p>
+                </ion-col>
+              </ion-row>
+          </ion-card-content>
+      </ion-card>
+    <ion-fab right bottom>
+        <a href="#/jobformcorp" ion-fab>
+            <ion-icon name="md-add"></ion-icon>
+        </a>
+    </ion-fab>
+</ion-content>
+  

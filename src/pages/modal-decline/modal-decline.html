@@ -1,0 +1,21 @@
+<ion-content padding>
+
+    <!-- Decline Modal -->
+
+     <div class="modal-inner">
+        <ion-list>
+            <ion-item>
+                    <h5>Reason For Decline</h5>
+            </ion-item>
+            <ion-item>
+                <label for="">Your Comments</label>
+                <ion-textarea placeholder="Enter a description"></ion-textarea>
+            </ion-item>
+        </ion-list>
+        <div class="job-detail" text-right>
+            <button (click)="dismiss()">Cancel</button>
+            <button class="accept-button" full (click)="dismiss()">Decline</button>
+        </div>
+    </div>
+</ion-content>
+  

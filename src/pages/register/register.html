@@ -1,0 +1,94 @@
+<ion-content class="page-register" >
+    <ion-list col-12>
+        <ion-item text-center class="app-logo">
+                <img src="assets/imgs/logo.png" />	
+        </ion-item>
+    </ion-list>
+	<!-- <ion-tabs>
+        <ion-tab [root]="tab4Root" tabTitle="Individual" tabIcon="briefcase"></ion-tab>
+        <ion-tab [root]="tab5Root" tabTitle="Corporate" tabIcon="stats"></ion-tab>
+    </ion-tabs> -->
+    <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="register">
+            <ion-segment-button class="segment-button_first segment-activated" value="individual">
+                <ion-icon name="md-briefcase"></ion-icon>
+                Individual
+            </ion-segment-button>
+            <ion-segment-button class="segment-button_second" value="coorporate">
+                <i class="material-icons">business</i> <br>
+                Coorporate
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+    <div [ngSwitch]="register">
+        <ion-list *ngSwitchCase="'individual'">
+            <ion-item>
+                <ion-label floating>Name</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="email" value=""></ion-input>
+            </ion-item>
+    
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Confirm Password</ion-label>
+                <ion-input type="password" value=""></ion-input>
+            </ion-item>
+            <ion-item style="display:none;">
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" value=""></ion-input>
+            </ion-item>
+            
+            <div padding text-center class="button-custom-div">
+                <a ion-button color="light" href="#/jobreq">Sign Up</a>
+                <button ion-button color="secondary">Sign Up with openid</button>
+                <p>
+                    <span><a href="#/login">Already have an account?</a> Log In</span>
+                </p>
+            </div>    
+        </ion-list>
+        
+        <ion-list *ngSwitchCase="'coorporate'">
+            <ion-item>
+                <ion-label floating>Name</ion-label>
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="email" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                    <ion-label floating>Bussiness Name</ion-label>
+                    <ion-input type="text" value=""></ion-input>
+                </ion-item>
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Confirm Password</ion-label>
+                <ion-input type="password" value=""></ion-input>
+            </ion-item>
+            <ion-item style="display:none;">
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password" value=""></ion-input>
+            </ion-item>
+            
+            <div padding text-center class="button-custom-div">
+                <a ion-button color="light" href="#/jobreqcorp">Sign Up</a>
+                <button ion-button color="secondary">Sign Up with openid</button>
+                <p>
+                    <span><a href="#/login">Already have an account?</a> Log In</span>
+                </p>
+            </div>    
+        </ion-list>
+    </div>
+</ion-content>
+
+    
+    
